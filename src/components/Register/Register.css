@@ -1,0 +1,93 @@
+.register-container {
+    height: 900px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.wrapper ol {
+    justify-content: center;
+    margin-bottom: 2px;
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+}
+
+.role-css {
+    padding-right: 15px;
+
+}
+
+.headertitle {
+    color: #414141;
+}
+
+.wrapper {
+    margin-top: -40px;
+    margin-bottom: -30px;
+}
+
+.item {
+    align-items: center;
+    text-align: center;
+}
+
+.personal-information {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text {
+    position: relative;
+    padding-left: 14px;
+    padding-right: 200px;
+}
+
+.personal-information input[type=text] {
+    width: 150%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    background: white;
+}
+
+.personal-information input[type=email] {
+    width: 150%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    background: white;
+}
+
+.personal-information input[type=password] {
+    width: 120%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    background: white;
+}
+
+
+.personal-information p,
+text p {
+    font-size: 20px;
+    color: black;
+}
+
+.redline {
+    width: 12%;
+}
+
+.register-btn {
+    background-color: #dd0c0c;
+    height: 45px;
+    width: 136px;
+    text-align: center;
+}

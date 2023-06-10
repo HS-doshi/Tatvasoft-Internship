@@ -1,0 +1,77 @@
+.productlist {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.productlist hr {
+    width: 25%;
+    margin-top: -10px;
+}
+
+.images {
+    height: 200px;
+    width: 190px;
+}
+
+.cartcontainer {
+    margin: auto;
+    width: 70%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.cartcontainer select {
+    margin-left: 5px;
+}
+
+.listing-section {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    /* width: 100%; */
+    /* margin-right: 10%; */
+    margin-left: 200px;
+    margin-right: 150px;
+}
+
+.bookforlist {
+    /* margin-right: 30px; */
+    margin-bottom: 50px;
+    /* margin-left: 190px; */
+    float: left;
+    width: 20%;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.bookforlist button {
+    width: 100%;
+    color: white;
+    background-color: red;
+}
+
+.pagination {
+    display: inline-block;
+    margin-left: 500px;
+}
+
+.pagination p {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination p.active {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.pagination p:hover:not(.active) {
+    background-color: #ddd;
+    cursor: pointer;
+}

@@ -1,34 +1,51 @@
-// import logo from './logo.svg';
-import './App.css';
-import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
-import About from './components/About';
-import Employ from './components/Employ';
-import logo from "./logo.svg"
-import Profile from './components/Profile';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import { createTheme } from '@material-ui/core';
+import RegistrationForm from './components/RegistrationForm';
+import Login2 from './Login2';
+import Register from "./components/Register/Register";
+import Footer from "./components/Header/Footer";
+import "./components/Header/Footer.css"
+// import BookList from "./components/Pages/Booklist";
+import Booklistning from "./components/Pages/Booklistning";
+import Editproduct from "./components/Pages/Editproduct";
+import { ThemeProvider } from "@material-ui/core";
+import { theme } from "././components/utils/theme";
+import BookList from "./components/book-listing/index";
+import EditBook from "./components/edit-book";
+import Header from "./components/Header/index";
+import UpdateProfile from "./components/update-profile/index";
+// import BookList from "./components/constant/book-listing/index";
 
-// Component First ketter should be capital!.
+
 function App() {
-  const clickme = () => alert("clicked!")
+  // const location = useLocation();
 
   return (
-    <BrowserRouter>
-      <div className="App">
-        <header>
-          <img src={logo} className='App-logo' alt='logo' />
-          <p>Edit <code>src/App.js</code> and save to reload. </p>
-          <h1>React Training : Tatvasoft!</h1>
+    <ThemeProvider theme={theme}>
 
-          <NavLink to="/">Home</NavLink><br />
-          <NavLink to='/emp'>Employee</NavLink><br />
-          <NavLink to='/profile'>Profile</NavLink><br />
-          <Routes>
-            <Route path='/' element={<About name="Heet Doshi" fun={clickme} />} />
-            <Route path='/emp' element={<Employ />} />
-            <Route path='/profile' element={<Profile />} />
-          </Routes>
-        </header>
-      </div>
-    </BrowserRouter>
+      <BrowserRouter>
+        <Header />
+        <br />
+        {/* {location.pathname !== '/login' && (
+          <NavLink to="/login">Click me to go to the Login Page!</NavLink>
+        )} */}
+        <Routes>
+          <Route path="/registrationpage" element={<RegistrationForm />} />
+          <Route path='/login' element={<Login2 />} />
+          <Route path="/register" element={<Register />} />
+          {/* <Route path="/" element={<BookList />} /> */}
+          {/* <Route path="/" element={<Booklistning />} /> */}
+          <Route path="/edit-product" element={<Editproduct />} />
+          {/* <Route path='/book-list' element={<BookList />} /> */}
+          <Route path="/" element={<BookList />} />
+          <Route path="/edit-book" element={<EditBook />} />
+          <Route path="/update-profile" element={<UpdateProfile />} />
+
+        </Routes>
+        {/* <Footer /> */}
+
+      </BrowserRouter>
+    </ThemeProvider >
   );
 }
 

@@ -1,0 +1,21 @@
+.footer img {
+    padding: 15px;
+    width: 180px;
+}
+
+/* 
+.footer text {
+    align-items: center;
+    margin-left: 50%;
+    padding-bottom: 0;
+    text-align: center;
+} */
+
+.footer {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding-bottom: 5px;
+    height: auto;
+    padding-top: 15px;
+    margin-bottom: 0;
+}
